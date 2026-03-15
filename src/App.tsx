@@ -37,6 +37,19 @@ export default function App() {
     { name: 'Contacto', href: '#contacto' },
   ];
 
+  const galleryImages = [
+    'carta.jpeg',
+    'fijura.jpeg',
+    'gato 1.jpeg',
+    'gato 2.jpeg',
+    'juntos.jpeg',
+    'luna.jpeg',
+    'madre.jpeg',
+    'postres.jpeg',
+    'selfie.jpeg',
+    'yo.jpeg'
+  ];
+
   return (
     <div className="min-h-screen selection:bg-soft-lavender selection:text-old-rose">
       {/* Navigation */}
@@ -143,7 +156,7 @@ export default function App() {
               <div className="relative">
                 <div className="absolute -top-4 -left-4 w-full h-full border-2 border-soft-lavender rounded-2xl z-0"></div>
                 <img 
-                  src="ruta/mariajose-perfil.jpg" 
+                  src="img/yo.jpeg" 
                   alt="Mariajose Roldan" 
                   className="relative z-10 w-full rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
                   referrerPolicy="no-referrer"
@@ -201,7 +214,7 @@ export default function App() {
             >
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="ruta/cocina.jpg" 
+                  src="img/postres.jpeg" 
                   alt="Gastronomía" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   referrerPolicy="no-referrer"
@@ -229,7 +242,7 @@ export default function App() {
             >
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="ruta/arte.jpg" 
+                  src="img/carta.jpeg" 
                   alt="Arte y Manualidades" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   referrerPolicy="no-referrer"
@@ -302,7 +315,7 @@ export default function App() {
               </div>
               <div className="w-full md:w-1/2 order-1 md:order-2">
                 <img 
-                  src="ruta/ny-trip.jpg" 
+                  src="img/selfie.jpeg" 
                   alt="New York Trip" 
                   className="rounded-3xl shadow-xl w-full aspect-video object-cover"
                   referrerPolicy="no-referrer"
@@ -324,7 +337,7 @@ export default function App() {
               </div>
               <div className="relative group">
                 <img 
-                  src="ruta/tuxedo-cat.jpg" 
+                  src="img/gato 1.jpeg" 
                   alt="Tuxedo Cat" 
                   className="rounded-[3rem] w-full h-full object-cover shadow-lg"
                   referrerPolicy="no-referrer"
@@ -388,19 +401,19 @@ export default function App() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
+            {galleryImages.map((image, index) => (
               <motion.div 
-                key={i}
+                key={index}
                 whileHover={{ scale: 1.02 }}
                 className="relative aspect-square overflow-hidden rounded-2xl group cursor-pointer"
               >
                 <img 
-                  src={`ruta/galeria${i}.jpg`} 
-                  alt={`Galería ${i}`} 
+                  src={`img/${image}`} 
+                  alt={`Galería ${index + 1}`} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   referrerPolicy="no-referrer"
                   onError={(e) => {
-                    (e.target as HTMLImageElement).src = `https://picsum.photos/seed/majo${i}/800/800`;
+                    (e.target as HTMLImageElement).src = `https://picsum.photos/seed/majo${index + 1}/800/800`;
                   }}
                 />
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
