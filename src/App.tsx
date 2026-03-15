@@ -161,9 +161,7 @@ export default function App() {
                   alt="Mariajose Roldan" 
                   className="relative z-10 w-full rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
                   referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=800';
-                  }}
+                  
                 />
               </div>
             </motion.div>
