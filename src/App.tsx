@@ -36,6 +36,7 @@ export default function App() {
     { name: 'Mis Sueños', href: '#suenos' },
     { name: 'Contacto', href: '#contacto' },
   ];
+ 
 
   const galleryImages = [
     'carta.jpeg',
