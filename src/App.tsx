@@ -110,13 +110,9 @@ export default function App() {
       <section id="inicio" className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="ruta/hero-bg.jpg" 
+            src="img/hero-bg.jpg" 
             alt="Hero Background" 
             className="w-full h-full object-cover opacity-40"
-            referrerPolicy="no-referrer"
-            onError={(e) => {
-              (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1495121605193-b116b5b9c5fe?auto=format&fit=crop&q=80&w=1920';
-            }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-cream/20 via-transparent to-cream"></div>
         </div>
@@ -160,10 +156,6 @@ export default function App() {
                   src="img/yo.jpeg" 
                   alt="Mariajose Roldan" 
                   className="relative z-10 w-full rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
-                  referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = 'img/yo.jpeg';
-                  }}
                 />
               </div>
             </motion.div>
@@ -218,10 +210,6 @@ export default function App() {
                   src="img/postres.jpeg" 
                   alt="Gastronomía" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=600';
-                  }}
                 />
               </div>
               <div className="p-8">
@@ -246,10 +234,6 @@ export default function App() {
                   src="img/carta.jpeg" 
                   alt="Arte y Manualidades" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&q=80&w=600';
-                  }}
                 />
               </div>
               <div className="p-8">
@@ -271,13 +255,9 @@ export default function App() {
             >
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="ruta/musica-libros.jpg" 
+                  src="img/musica-libros.jpg" 
                   alt="Cultura y Relax" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&q=80&w=600';
-                  }}
                 />
               </div>
               <div className="p-8">
@@ -319,10 +299,6 @@ export default function App() {
                   src="img/selfie.jpeg" 
                   alt="New York Trip" 
                   className="rounded-3xl shadow-xl w-full aspect-video object-cover"
-                  referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&q=80&w=800';
-                  }}
                 />
               </div>
             </div>
@@ -341,10 +317,6 @@ export default function App() {
                   src="img/gato 1.jpeg" 
                   alt="Tuxedo Cat" 
                   className="rounded-[3rem] w-full h-full object-cover shadow-lg"
-                  referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=800';
-                  }}
                 />
                 <div className="absolute inset-0 bg-old-rose/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-[3rem] flex flex-col items-center justify-center p-8 text-white text-center">
                   <Cat size={48} className="mb-4" />
@@ -412,10 +384,6 @@ export default function App() {
                   src={`img/${image}`} 
                   alt={`Galería ${index + 1}`} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = `https://picsum.photos/seed/majo${index + 1}/800/800`;
-                  }}
                 />
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </motion.div>
