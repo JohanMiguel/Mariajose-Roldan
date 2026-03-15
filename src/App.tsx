@@ -110,7 +110,7 @@ export default function App() {
       <section id="inicio" className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="img/hero-bg.jpg" 
+            src="img/juntos.jpeg" 
             alt="Hero Background" 
             className="w-full h-full object-cover opacity-40"
           />
@@ -255,7 +255,7 @@ export default function App() {
             >
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="img/musica-libros.jpg" 
+                  src="img/luna.jpeg" 
                   alt="Cultura y Relax" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
