@@ -161,7 +161,9 @@ export default function App() {
                   alt="Mariajose Roldan" 
                   className="relative z-10 w-full rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
                   referrerPolicy="no-referrer"
-                  
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = 'img/yo.jpeg';
+                  }}
                 />
               </div>
             </motion.div>
